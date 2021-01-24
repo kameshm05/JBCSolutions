@@ -1,0 +1,12 @@
+body {
+    background-color: $color-grey;
+}
+.heading {
+    &-2 {
+        font-size: 18px;
+        font-weight: 500;
+        color: $secondary-color;
+        font-size: $font-size-30;
+        font-weight: 700;
+    }
+}

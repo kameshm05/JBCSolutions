@@ -1,0 +1,61 @@
+// .ms-Pivot--tabs {
+//   background-color: red;
+
+//   .ms-Pivot-link {
+//     background-color: transparent;
+//   }
+// }
+
+.ms-Pivot {
+  &.ms-Pivot--tabs {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#d62326+0,ff7667+100 */
+    background: #d62326;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #d62326 0%, #ff7667 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #d62326 0%, #ff7667 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #d62326 0%, #ff7667 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d62326', endColorstr='#ff7667', GradientType=1);
+    /* IE6-9 */
+
+    .ms-Button {
+      &.ms-Pivot-link {
+        background-color: transparent;
+        color: $color-white;
+        font-size: $font-size-15;
+        font-weight: 600;
+        padding-left: 30px;
+        padding-right: 30px;
+        &:hover {
+            &:not(.linkIsSelected) {
+                color: #fff;
+            }
+          }
+      }
+     
+
+      &.is-selected {
+        background-color: $color-white;
+        color: $primary-color;
+        &:hover {
+            &:not(.linkIsSelected) {
+                color: $primary-color;
+            }
+          }
+
+        &.linkIsSelected {
+          &:hover {
+            color: $primary-color;
+          }
+        }
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+

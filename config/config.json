@@ -1,0 +1,55 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "add-tail-gate-request-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/addTailGateRequest/AddTailGateRequestWebPart.js",
+          "manifest": "./src/webparts/addTailGateRequest/AddTailGateRequestWebPart.manifest.json"
+        }
+      ]
+    },
+    "tail-gate-request-dashboard-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/tailGateRequestDashboard/TailGateRequestDashboardWebPart.js",
+          "manifest": "./src/webparts/tailGateRequestDashboard/TailGateRequestDashboardWebPart.manifest.json"
+        }
+      ]
+    },
+    "add-tailgate-contract-form-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/addTailgateContractForm/AddTailgateContractFormWebPart.js",
+          "manifest": "./src/webparts/addTailgateContractForm/AddTailgateContractFormWebPart.manifest.json"
+        }
+      ]
+    },
+    "contractor-approve-hse-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/contractorApproveHse/ContractorApproveHseWebPart.js",
+          "manifest": "./src/webparts/contractorApproveHse/ContractorApproveHseWebPart.manifest.json"
+        }
+      ]
+    },
+    "report-sign-off-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/reportSignOff/ReportSignOffWebPart.js",
+          "manifest": "./src/webparts/reportSignOff/ReportSignOffWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "AddTailGateRequestWebPartStrings": "lib/webparts/addTailGateRequest/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js",
+    "TailGateRequestDashboardWebPartStrings": "lib/webparts/tailGateRequestDashboard/loc/{locale}.js",
+    "AddTailgateContractFormWebPartStrings": "lib/webparts/addTailgateContractForm/loc/{locale}.js",
+    "ContractorApproveHseWebPartStrings": "lib/webparts/contractorApproveHse/loc/{locale}.js",
+    "ReportSignOffWebPartStrings": "lib/webparts/reportSignOff/loc/{locale}.js"
+  }
+}

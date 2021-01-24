@@ -1,0 +1,362 @@
+hr{
+    width:85%;
+}
+table {
+    width: 70%;
+    margin: auto;
+}
+table thead th {
+    padding: 10px;
+    background: #dc2829 !important;
+    color: #fff !important;
+  }
+
+  tr:nth-child(odd) {
+    background: #d2d3dc !important;
+   }
+   tr:nth-child(even) {
+    background: #fff !important;
+   }
+
+.container {
+    padding: 20px 100px;
+}
+.container hr {
+    width: 100%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td {
+    white-space: break-spaces;
+    width: 150px;
+    padding: 10px;
+}
+
+.action-section {
+    padding: 20px 100px !important;
+}
+
+.action-section .cmt-sec
+{
+    margin-top: 12px;
+}
+.SignOff-sec
+{
+    margin-top: 10px;
+}
+.contBtn {
+    margin-top: 6px;
+}
+/*file upload*/
+.container-upload .upload-box {
+    font-size: 14px;
+    background: white;
+    /* border-radius: 30px; */
+    /* box-shadow: 3px 1px 15px -3px grey; */
+    width: 350px;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid #000;
+  }
+  .container-upload ::-webkit-file-upload-button {
+    font-size: px;
+    color: white;
+    background: #c70808eb;
+    padding: 0px 20px;
+    border: none;
+    
+    box-shadow: 1px 0 1px 1px #c7c7c7;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .upload-group {
+    position: relative;
+    width: 300px;
+    margin-bottom: 15px;
+  }
+  .custom-file {
+    display: flex;
+    align-items: center;
+  }
+  .custom-file-label::before {
+    position: absolute;
+    right: -65px;
+    padding-left: 10px;
+    padding-right: 10px;
+    top: 0;
+    bottom: 0;
+    background: #cb1b1b;
+    color: #fff;
+    content: "Browse";
+  }
+  .custom-file-input {
+    opacity: 0;
+  }
+  .custom-file-label {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 34px;
+    line-height: 32px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid #000;
+    top: 0;
+    cursor: pointer;
+  }
+
+  /*loader*/
+  body{
+	margin:0;
+}
+
+#loader-container {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff!important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+}
+#loader-container span {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin: 0 5px;
+  position: relative;
+}
+#loader-container span::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  border-radius: 50%;
+  z-index: -1;
+  animation: ripple 1.5s ease-out infinite;
+}
+#loader-container span:first-child {
+  background-color: #ff414d;
+}
+#loader-container span:first-child::before {
+  animation-delay: 0.2s;
+}
+#loader-container span:nth-child(2) {
+  background-color: #ff7a00;
+  transform: scale(0.9);
+}
+#loader-container span:nth-child(2)::before {
+  animation-delay: 0.4s;
+}
+#loader-container span:nth-child(3) {
+  background-color: #28df99;
+  transform: scale(0.8);
+}
+#loader-container span:nth-child(3)::before {
+  animation-delay: 0.6s;
+}
+#loader-container span:nth-child(4) {
+  background-color: #81b214;
+  transform: scale(0.7);
+}
+#loader-container span:nth-child(4)::before {
+  animation-delay: 1s;
+}
+#loader-container span:last-child {
+  background-color: #f09ae9;
+  transform: scale(0.6);
+}
+#loader-container span:last-child::before {
+  animation-delay: 1s;
+}
+@keyframes ripple {
+  from {
+    opacity: 1;
+    transform: scale(0);
+  }
+  to {
+    opacity: 0;
+    transform: scale(3);
+  }
+}
+.file-icon div i {
+  font-weight: bold; 
+}
+.file-icon div {
+  margin-top: -6px;
+}
+.custom-upload input {
+  display: none;
+}
+.custom-upload label {
+  padding: 4px 12px;
+  display: flex;
+  width: 120px;
+  justify-content: center;
+  align-items: center;
+  background: #c70808eb;
+  color: #fff;
+  cursor: pointer;
+}
+.swal-overlay--show-modal .swal-modal{
+  font-family: "Segoe UI";
+  }
+  .swal-title{
+  color: #000;
+  }
+  .swal-text{
+  color: #000;
+  }
+  .swal-icon--success__ring{
+      border: 4px solid hsla(98,55%,69%,1);
+      border-radius:30%;
+  }
+  
+  .swal-button {
+      background-color: #c70808eb;
+      border-radius: 0;
+      outline: none;
+  }
+  .swal-footer {
+      margin-bottom: 6px;
+  }
+  .swal-button:not([disabled]):hover
+  {
+    background-color: #c70808eb;
+  }
+  .swal-button:active {
+    background-color: #c70808eb;
+}
+.swal-button:focus
+{
+  box-shadow: none;
+}
+.file-upload-icon,.file-upload-icon:hover
+{
+  background-color: transparent;
+  color: #fff;
+  height: 22px;
+  margin-right: 4px;
+}
+.ag-center-cols-container
+{
+  width: auto !important;
+}
+.ag-theme-alpine a{
+  color: #c70808eb;
+  text-decoration: none;
+}
+.ag-theme-alpine a:active,
+.ag-theme-alpine a:visited
+{
+  color: #c70808eb;
+  text-decoration: none;
+}
+
+.ag-header-cell-menu-button {
+  opacity: 1 !important;
+  color: #181d1f !important;
+}
+
+.container input[type="text"] {
+  border: 1px solid #a5a5a5;
+  height: 40px; 
+  }
+  .fileLbl
+  {
+    font-size: 14px !important;
+    font-weight: normal !important;
+  }
+  .history-contents label,
+  .action-section label
+{
+    font-size: 16px !important;
+    font-weight: 500 !important;
+}
+.history-contents,.action-section {
+width: 95%;
+margin: auto !important;
+}
+.item-contents .leftLbl{
+  font-size: 17px;
+    font-weight: 500;
+}
+
+.tbl-margin
+{
+  margin-top: 20px !important;
+}
+.cmt-sec > div {
+  margin-top: 10px;
+}
+.cmt-sec
+{
+  padding: 0 !important;
+}
+.check-sec
+{
+  margin-top: 8px;
+}
+.reportTable
+{
+  width: 60% !important;
+}
+.reportBtn
+{
+  display: flex;
+  justify-content: center;
+}
+.reportBtn > div {
+  width: auto !important;
+}
+.btnscontract > div {
+  width: auto !important;
+}
+#workbenchPageContent {
+  left: -30px !important;
+  max-width: 1364px !important;
+}
+.radiostatus
+{
+  padding-left: 20px;
+  
+}
+.radiostatus label:not(first-child) {
+    font-weight: 500;
+    font-size:17px !important;
+}
+.tableSignOff
+{
+  background: url('../ExternalRef/Images/signofficon.png');
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  background-size: 100%;
+    background-position: 50%;
+    display: inline-block;
+    margin-left: 12px;
+}
+
+.history-contents .adminApproval {
+  padding: 0 110px;
+}
+
+.adminApproval .tbl-margin {
+  padding: 0 40px;
+  margin-bottom: 20px;
+}
+.allApproverList {
+  max-height: 180px;
+  overflow-y: auto;
+}

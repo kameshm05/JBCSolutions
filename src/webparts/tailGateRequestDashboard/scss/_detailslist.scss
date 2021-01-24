@@ -1,0 +1,21 @@
+.ms-DetailsHeader {
+    color: $primary-color;
+    .ms-DetailsHeader-cellName {
+        color: $secondary-color;
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
+.ms-DetailsRow-cell
+{
+    font-size: 16px; 
+}
+.pagination .ms-Button
+{
+    width: 25px;
+    height: 25px;
+    background-color: $color-white;
+    color: $secondary-color;
+    font-size: 12px;
+    line-height: 25px;
+}
